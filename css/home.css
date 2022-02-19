@@ -12,6 +12,13 @@ body {
   height: 100vh !important;
   overflow: hidden !important;
 }
+#loading{
+  height: 100vh;
+  background: #ff56;
+}
+.root{
+  display: none;
+}
 .videoBg {
   position: fixed;
   right: 0;
@@ -31,7 +38,12 @@ body {
 }
 .arnav .left-navbar img {
   height: 90px;
-  width: 90px;
+  width:  90px;
+}
+
+.arnav .right-navbar{
+  display: flex;
+  align-items: center;
 }
 .arnav .right-navbar img {
   height: 50px;
@@ -41,6 +53,7 @@ body {
 .arnav a {
   color: #f1f1f1;
   text-decoration: none;
+  display: block;
   font-size: 1.3rem;
   margin: 0 1.6rem;
 }
@@ -66,23 +79,23 @@ body {
 
 /* OFFCANVAS CSS */
 .offcanvas-end{
-  animation: cca 2s !important;
-  transition: 1s ease !important;
+  animation: cca 0.8s !important;
+  transition: 0.8s ease !important;
 }
 .offcanvas.show{
-  animation: wdct 1.5s !important;
-  transition: 1.25s ease !important;
+  animation: wdct 1s !important;
+  transition: 1s ease !important;
 }
 @keyframes cca {
   from{
     opacity: 1;
   }to{
-    opacity: 0.1;
+    opacity: 0;
   }
 }
 @keyframes wdct {
   0% {
-    opacity: 0.25;
+    opacity: 0.5;
   }
   100% {
     opacity: 1;

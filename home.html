@@ -14,45 +14,50 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-    <div class="arnav">
-        <a class="left-navbar" href="/">
-            <img src="./images/final-logo.png" alt="Aarohan Logo">
-        </a>
-        <ul class="right-navbar">
-            <a href="/events">Events</a>
-            <a href="/attractions">Attractions</a>
-            <a href="/aboutus">About us</a>
-            <a href="/contactus">Contact us</a>
-            <a type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img src="./images/rishav.jpg" alt="Rishav Jha" /></a>
-        </ul>
-    </div>
-    <!-- OFFCANVAS For Profile Click Event-->
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-        <div class="profile">
-            <img src="./images/rishav.jpg" alt="Rishav Jha" data-aos="zoom-in" />
-            <div class="names">
-                <h4>Hello!</h4>
-                <h2>Rishav</h2>
+    <div id="loading"><h1>Loading</h1></div>
+    <div class="root" id="root">
+        <div class="arnav">
+            <a class="left-navbar" href="/">
+                <img src="./images/final-logo.png" alt="Aarohan Logo" data-aos="zoom-in" data-aos-duration="600" data-aos-easing="ease">
+            </a>
+            <ul class="right-navbar">
+                <a data-aos="zoom-in" data-aos-duration="600" data-aos-easing="ease" href="/events">Events</a>
+                <a data-aos="zoom-in" data-aos-duration="600" data-aos-easing="ease" href="/attractions">Attractions</a>
+                <a data-aos="zoom-in" data-aos-duration="600" data-aos-easing="ease" href="/aboutus">About us</a>
+                <a data-aos="zoom-in" data-aos-duration="600" data-aos-easing="ease" href="/contactus">Contact us</a>
+                <a data-aos="zoom-in" data-aos-duration="600" data-aos-easing="ease" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img src="./images/rishav.jpg" alt="Rishav Jha" /></a>
+            </ul>
+        </div>
+        <!-- OFFCANVAS For Profile Click Event-->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="profile">
+                <img src="./images/rishav.jpg" alt="Rishav Jha" data-aos="zoom-in" />
+                <div class="names">
+                    <h4>Hello!</h4>
+                    <h2>Rishav</h2>
+                </div>
+                <div class="btn-container">
+                    <button type="button" data-bs-dismiss="offcanvas" aria-label="Close">&times;</button>
+                </div>
             </div>
-            <div class="btn-container">
-                <button type="button" data-bs-dismiss="offcanvas" aria-label="Close">&times;</button>
+            <div class="options">
+                <a href="/my-events">My Events</a>
+                <a href="/Notifications">Notifications</a>
+                <a href="/signout">Sign Out</a>
             </div>
         </div>
-        <div class="options">
-            <a href="/my-events">My Events</a>
-            <a href="/Notifications">Notifications</a>
-            <a href="/signout">Sign Out</a>
+        <!-- OFFCANVAS For Profile Click Event-->
+        <video class="videoBg" autoplay muted loop onload="alert('Loaded')" id="video">
+            <source src="./images/bgVideo.mp4" type="video/mp4">
+        </video>
+        <div class="content" data-aos="fade-up" data-aos-duration="600" data-aos-easing="ease">
+            <h1>AAROHAN 2022</h1>
+            <p>Official Techno-Management Fest <br> NIT Durgapur</p>
         </div>
     </div>
-    <!-- OFFCANVAS For Profile Click Event-->
-    <video class="videoBg" autoplay muted loop>
-        <source src="./images/bgVideo.mp4" type="video/mp4">
-    </video>
-    <div class="content" data-aos="fade-up">
-        <h1>AAROHAN 2022</h1>
-        <p>Official Techno-Management Fest <br> NIT Durgapur</p>
-    </div>    
 </body>
+<!-- Home Scripts -->
+<script src="./js/home.js"></script>
 <!-- Bootstrap Js and Popper JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <!-- AOS Scripts -->

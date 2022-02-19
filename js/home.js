@@ -1,7 +1,9 @@
 const VIDEO = document.getElementById('video');
 
 VIDEO.onloadeddata = function() {
-    loadend();
+    setTimeout(() => {
+        loadend();
+    }, 2000);
 };
 
 function loadend() {

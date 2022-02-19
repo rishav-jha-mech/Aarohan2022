@@ -14,8 +14,30 @@ body {
 }
 #loading{
   height: 100vh;
-  background: #ff56;
+  background: #000;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+#loading img{
+  height: 240px;
+  width:  240px;
+  animation: WDCT 2s ease infinite;
+  transition: 0.5s ease;
+}
+@keyframes WDCT {
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.5);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
 .root{
   display: none;
 }

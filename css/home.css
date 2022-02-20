@@ -81,6 +81,7 @@ body {
   border-radius: 50%;
 }
 .arnav a {
+  position: relative;
   color: #f1f1f1;
   text-decoration: none;
   display: block;
@@ -89,7 +90,35 @@ body {
   animation: navAnime 0.7s ease;
   transition: 0.7s;
 }
-
+.arnav .botHover:hover {
+  color: aqua;
+  transition: 0.5s all;
+}
+.arnav .botHover::after {
+  transition: 0.5s all;
+}
+.arnav .botHover:hover::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  border-radius: 50px;
+  background: aqua;
+  transition: 0.5s;
+  margin: auto auto;
+  left: 0;
+  right: 0;
+  bottom: -2px;
+  animation: navHover 0.25s ease;
+}
+@keyframes navHover {
+  from{
+    width: 15%;
+    opacity: 0.1;
+  }to{
+    width: 100%;
+    opacity: 1;
+  }
+}
 /* Bottom Content */
 @keyframes bounce {
   0%{

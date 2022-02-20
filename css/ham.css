@@ -121,9 +121,24 @@ svg {
 .aqua{
   stroke: aqua;
 }
-@media(max-width:475px){
+.showOnPc{
+  display: block;
+}
+.showOnPhone{
+  display: none !important;
+}
+@media(max-width:991px){
+  .showOnPhone{
+    display: block !important;
+  }
+  .showOnPc{
+    display: none;
+  }
   .canva-in .plate,
   .canva-in svg{
     padding-right: 1rem;
   }
+}
+.hammBa{
+  z-index: 100000000000000;
 }

@@ -16,10 +16,9 @@ function closeAfterSometimePC() {
 }
 function closeAfterSometimeMob(){
     document.getElementById('ocanva').classList.toggle('active')
-    setTimeout(() => {
+    // setTimeout(() => {
         offsetShowBtnHidden.click()
-        document.getElementById('ocanva').classList.toggle('active')
-    }, 400);
+    // }, 650);
 }
 function loadend() {
     document.getElementById('loading').style.display= "none";

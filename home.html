@@ -28,7 +28,10 @@
                 <a href="/aboutus">About us</a>
                 <a href="/contactus">Contact us</a>
                 <button class="d-none" id="shownBtn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">s</button>
-                <a>
+                <a style="cursor: pointer;">
+                  <img class="showOnPc" src="./images/rishav.jpg" alt="Rishav Legend" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                </a>
+                <a class="showOnPhone" style="z-index: 10000000000000;cursor: pointer;">
                     <svg>
                         <defs>
                           <filter id="gooeyness">
@@ -98,7 +101,7 @@
                     <h4>Hello!</h4>
                     <h2>Rishav</h2>
                 </div>
-                <div class="btn-container">
+                <div class="btn-container showOnPc">
                     <button class="d-none" id="hiddenBtn" data-bs-dismiss="offcanvas" aria-label="Close">ss</button>
                     <button class="canva-in" type="button">
                         <svg>

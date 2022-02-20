@@ -2,17 +2,20 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   font-family: "Poppins", sans-serif !important;
 }
+html{
+  overflow: hidden;
+}
 body {
+  background: #66f;
+  z-index: 100;
   margin: 0;
   padding: 0;
-  width: 100vw !important;
   height: 100vh !important;
   overflow: hidden !important;
 }
-#loading{
+#loading {
   height: 100vh;
   background: #000;
 
@@ -20,25 +23,25 @@ body {
   justify-content: center;
   align-items: center;
 }
-#loading img{
+#loading img {
   height: 240px;
-  width:  240px;
+  width: 240px;
   animation: WDCT 2s ease infinite;
   transition: 0.5s ease;
 }
 @keyframes WDCT {
-  0%{
+  0% {
     transform: scale(1);
   }
-  50%{
+  50% {
     transform: scale(1.5);
   }
-  100%{
+  100% {
     transform: scale(1);
   }
 }
 
-.root{
+.root {
   display: none;
 }
 .videoBg {
@@ -58,12 +61,18 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+@media (max-width:600px){
+  .arnav{
+    margin-top: 0;
+    padding-right: 0;
+  }   
+}
 .arnav .left-navbar img {
   height: 90px;
-  width:  90px;
+  width: 90px;
 }
 
-.arnav .right-navbar{
+.arnav .right-navbar {
   display: flex;
   align-items: center;
 }
@@ -104,28 +113,13 @@ body {
 }
 
 /* OFFCANVAS CSS */
-.offcanvas-end{
+.offcanvas-end {
   animation: cca 0.8s !important;
   transition: 0.8s ease !important;
 }
-.offcanvas.show{
+.offcanvas.show {
   animation: wdct 1s !important;
   transition: 1s ease !important;
-}
-@keyframes cca {
-  from{
-    opacity: 1;
-  }to{
-    opacity: 0;
-  }
-}
-@keyframes wdct {
-  0% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 .offcanvas .profile {
   display: flex;
@@ -140,6 +134,8 @@ body {
   flex: 1;
   display: block;
   padding-left: 2rem;
+  animation: fadeZoom 0.8s ease 1s;
+  transition: 0.8s ease;
 }
 .offcanvas .profile h4 {
   line-height: 0;
@@ -152,7 +148,6 @@ body {
 }
 .offcanvas .profile button {
   font-size: 5rem;
-
   border: none;
   outline: none;
   background: transparent;
@@ -210,9 +205,14 @@ body {
   }
 }
 @media (max-width: 600px) {
+  
+  .offcanvas.show {
+    animation: wdct 0.5s !important;
+    transition: 0.5s !important;
+  }
   .offcanvas-end {
     width: 100vw !important;
-    padding: 1rem ;
+    padding: 1rem;
   }
   .content {
     left: 0.5rem !important;
@@ -225,12 +225,12 @@ body {
     font-size: 3.5rem;
   }
   .content p {
-      font-size: 1.25rem;
+    font-size: 1.25rem;
   }
-  
-.offcanvas .profile img {
+
+  .offcanvas .profile img {
     height: 80px;
-    width:  80px;
+    width: 80px;
     border-radius: 50%;
   }
   .offcanvas .profile .names {
@@ -248,26 +248,41 @@ body {
     letter-spacing: 1px;
   }
   .offcanvas .profile button {
-      font-size: 4rem;
+    font-size: 4rem;
   }
-.offcanvas .options {
+  .offcanvas .options {
     margin-top: 1.5rem;
     padding: 0 0;
   }
-.offcanvas .options a{
+  .offcanvas .options a {
     margin: 1.5rem 0;
     font-size: 1.5rem;
+  }
 }
-}
-
-
-@keyframes navAnime{
-  from{
+@keyframes navAnime {
+  from {
     opacity: 0;
     transform: scale(0.8);
   }
-  to{
+  to {
     opacity: 1;
     transform: scale(1);
+  }
+}
+
+@keyframes cca {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes wdct {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
   }
 }

@@ -78,6 +78,8 @@ body {
   display: block;
   font-size: 1.3rem;
   margin: 0 1.6rem;
+  animation: navAnime 0.7s ease;
+  transition: 0.7s;
 }
 
 /* Bottom Content */
@@ -88,6 +90,8 @@ body {
   color: #f1f1f1;
   width: 100%;
   padding: 20px;
+  animation: navAnime 0.7s ease;
+  transition: 0.7s;
 }
 .content h1 {
   font-size: 4.5rem;
@@ -254,4 +258,16 @@ body {
     margin: 1.5rem 0;
     font-size: 1.5rem;
 }
+}
+
+
+@keyframes navAnime{
+  from{
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to{
+    opacity: 1;
+    transform: scale(1);
+  }
 }

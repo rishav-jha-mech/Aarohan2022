@@ -253,6 +253,8 @@ body {
   .offcanvas.show {
     animation: wdct 0.5s !important;
     transition: 0.5s !important;
+    min-height: 100vh;
+    padding-bottom: 100px !important;
   }
   .offcanvas-end {
     width: 100vw !important;
@@ -308,7 +310,7 @@ body {
   }
   .offcanvas .options a {
     margin: 1rem 0;
-    padding: 16px 0;
+    padding: 14px 0;
     text-align: center;
     font-size: 1.25rem;
   }

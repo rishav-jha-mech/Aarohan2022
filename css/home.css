@@ -131,6 +131,7 @@ body {
   transition: 1s ease !important;
 }
 .offcanvas .profile {
+  padding-top: 0.75rem;
   display: flex;
   align-items: center;
 }
@@ -150,6 +151,11 @@ body {
   line-height: 0;
 }
 .offcanvas .profile h2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
   font-size: 3rem;
   margin-bottom: -20px;
   font-weight: 600;
@@ -246,14 +252,14 @@ body {
   }
 
   .offcanvas .profile img {
-    height: 80px;
-    width: 80px;
+    height: 70px;
+    width:  70px;
     border-radius: 50%;
   }
   .offcanvas .profile .names {
     flex: 1;
     display: block;
-    padding-left: 1.5rem;
+    padding-left: 1rem;
   }
   .offcanvas .profile h4 {
     line-height: 0;
@@ -272,8 +278,10 @@ body {
     padding: 0 0;
   }
   .offcanvas .options a {
-    margin: 1.5rem 0;
-    font-size: 1.5rem;
+    margin: 1rem 0;
+    padding: 16px 0;
+    text-align: center;
+    font-size: 1.25rem;
   }
 }
 @keyframes navAnime {

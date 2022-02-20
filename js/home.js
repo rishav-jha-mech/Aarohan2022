@@ -3,6 +3,7 @@ const offsetCloseBtnHidden = document.getElementById('hiddenBtn');
 const offsetShowBtnHidden = document.getElementById('shownBtn');
 
 VIDEO.onloadeddata = function() {
+    console.log("Video loaded");
     setTimeout(() => {
         loadend();
     }, 2000);
